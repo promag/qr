@@ -7,6 +7,7 @@
 #include <QQuickWidget>
 #include <QSystemTrayIcon>
 #include <QTranslator>
+#include <QQuickStyle>
 #include <QQuickWidget>
 #include <QWidgetAction>
 #include <QWindow>
@@ -54,6 +55,7 @@ int main(int argc, char *argv[])
         }
     }
 
+    QQuickStyle::setStyle("Material");
     QQuickWindow::setDefaultAlphaBuffer(true);
 
     QQmlApplicationEngine engine;

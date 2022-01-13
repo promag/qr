@@ -1,4 +1,4 @@
-QT += quick widgets quickwidgets
+QT += quick widgets quickwidgets quickcontrols2
 
 QML_IMPORT_NAME = QR
 QML_IMPORT_MAJOR_VERSION = 1
