@@ -1,3 +1,4 @@
+import QtGraphicalEffects 1.15
 import QtMultimedia 5.13
 import QtQuick 2.15
 import QtQuick.Controls 2.5
@@ -53,6 +54,14 @@ Window {
                 tryHarder: true
                 enabledDecoders: QZXing.DecoderFormat_QR_CODE
                 onTagFound: if (scanner.ready) scanner.title = tag;
+            }
+        }
+        layer.enabled: true
+        layer.effect: OpacityMask {
+            maskSource: Rectangle {
+                width: video_output.width
+                height: video_output.height
+                radius: 4
             }
         }
     }
