@@ -62,6 +62,14 @@ Window {
                 width: video_output.width
                 height: video_output.height
                 radius: 4
+                color: '#44ffffff'
+                Rectangle {
+                    anchors.centerIn: parent
+                    color: 'white'
+                    width: 100
+                    height: 100
+                    radius: 4
+                }
             }
         }
     }
